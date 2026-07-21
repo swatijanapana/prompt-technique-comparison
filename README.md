@@ -14,20 +14,21 @@ This project is implementing prompt engineering techniques (zero-shot, few-shot,
 - Few-shot — same instruction, with 3 worked examples shown first
 - Chain-of-thought — same instruction, but Claude reasons step-by-step before giving its final answer
 
+## 🖼️ Workflow Screenshot
+
+![workflow_screenshot.svg](workflow_screenshot.svg)
+
 
 ## 🔄 Workflow
 
 1. `prompting_techniques.py ` sends one email's text to Claude and returns a predicted label
 2.  It consists of three different functions `classify_zero_shot`, `classify_few_shot` and `classify_CoT`
-3. `run_eval_techniques.py` runs the SAME 11 test emails through all three techniques, using one
+3. `run_eval_techniques.py` runs the same test emails through all three techniques, using one
    shared `evaluate_technique()` function, and reports each technique's accuracy:
    - Zero-shot accuracy
    - Few-shot accuracy
    - Chain-of-thought accuracy
 
-## 🖼️ Workflow Screenshot
-
-![workflow_screenshot.svg](workflow_screenshot.svg)
 
 ## 📁 Project Structure
 
